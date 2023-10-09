@@ -1,126 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <style>
-		 html {		scroll-behavior: smooth;
-		          font-family: Lato;
-
-}
-         .intro, .columns {
-         padding: 0 10%;
-         display: flex;
-         align-items: center;
-         }
-         .text {
-         margin-left: 20px;
-         }
-         a  {
-         color:#66D7D1;
-         }
-         header {
-         text-align: center;
-         }
-         img {
-         max-width: 200px;
-         #border: 2px solid #333;
-         border-radius: 5%;
-         padding: 
-         }
-         section {
-         //border: 2px solid red;
-         //    margin: 20px;
-         padding-bottom: 3em;
-         padding-top: 2em;
-         }
-         h2 {
-         color: #333;
-         }
-         .title {
-         background-color: #403D58; /* Dark Purple Color */
-         color:white;
-         text-align: center;
-         font-family: 'Abril Fatface', cursive; 
-         font-size: 2em;
-         padding: 10px;
-         }
-         .navbar {
-         display: flex;
-         justify-content: space-between;
-         }
-         .navbar a {
-         font-family: 'Abril Fatface', cursive; 
-         color: white;
-         }
-      </style>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Terhi Viitanen</title>
-   </head>
-   <body>
-      <div class="title">
-         <h1>Terhi Viitanen</h1>
-         <div class="navbar">
-            <div><a href="#about">About Terhi</a></div>
-            <div><a href="#blogs">Blogs & Talks</a></div>
-            <div><a href="#contact">Contact</a></div>
-         </div>
-      </div>
-      <header>
-         <section id="intro">
-            <div class="intro">
-               <img src="Pictures/Terhi-profilepic.jpeg" alt="My Picture">
-               <div class="text">
-                  <p>The digi-curious and AI-loving executive assistant who wants to break down the silos and make us work better together</p>
-                  <p>Work life goal: to create a working culture where knowledge is shared, people feel empowered and continuous learning is encouraged</p>
-                  <p>25 years of working experience from different industries such as technology, energy, law and property</p>
-               </div>
-            </div>
-         </section>
-      </header>
-      <section id="about">
-         <h2>About Terhi</h2>
-         <h3>Work History</h3>
-         <ul>
-            <li>
-               <h3>Executive Assistant and CX Champion Community Manager</h3>
-               <p>Vaisala Corporation - 01/2023 (current) </p>
-               <p>Supporting the Industrial Measurements Leadership Team and driving CX culture within Vaisala. Organising offsite meetings and participation in in various projects such as CX Programme and Brand renewal.</p>
-            </li>
-            <li>
-               <h3>Executive Assistant</h3>
-               <p>Wärtsilä Corporation - 06/2012-01/2023 </p>
-               <p>Various global positions inc. in Marine Legal, Digital Transformation, HR and Communications & Marketing teams, supporting the leaders in change communications and culture development projects</p>
-            </li>
-         </ul>
-      </section>
-      <section id="blogs">
-         <h2>Blogs & Talks </h2>
-         <p>I am intrigued to see where the current "Gen AI revolution" is taking my profession. </p>
-		 <p>You can read my blogs (in Finnish) about the future of assistant work in Finland; see links below. Translations are coming!</p>
-         <p> My favourite topic is to talk about how knowledge workers can start utilising Generative AI in their daily work, using low-threshold examples and practical usecases.</p>
-         <p>Recently, I have given talks to Toimistosissit assistant network and discussed the same in a Haaga-Helia University webinar. </p>
-		 <div class="columns">
-		 <div>
-		 <h3>Blogs</h3>
-         <ul>
-            <li><a href="https://assistentinarkea.blogspot.com/2023/08/tekoaly-tuli-assistentti-oletko-valmis.html">Tekoäly tuli - Assistentti, oletko valmis?</a></li>
-            <li><a href="https://assistentinarkea.blogspot.com/2019/01/assistentin-arkea-virtuaali-vs.html">Assistentin rooli digi-aikana</a></li>
-         </ul>
-         <h3>Talks</h3>
-         <ul>
-			<li>Utilising Gen AI in my daily work; webinar by Haaga-Helia, 6 October 2023</li>
-            <li>"Tekoälynväläyksiä" talk to Toimistosissit network, 6 September 2023 </li>
-		 </ul>
-		 </div>
-         <img src="Pictures/Blog-background.jpeg" alt="cityscape">
-      </section>
-	  
-      <section id="contact">
-         <h2>Contact</h2>
-         <p>Let's connect! 
-         <p>Email: tviitanen@gmail.com</p>
-         <p>LinkedIn: <a href="https://www.linkedin.com/in/terhiviitanen">Terhi Viitanen</a></p>
-         <img src="Pictures/Digital-pigeon.jpg" alt="messenger_pigeon">
-      </section>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: Lato;
+        }
+
+        .intro, .columns {
+            padding: 0 10%;
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            margin-left: 20px;
+        }
+
+        a {
+            color: #66D7D1;
+        }
+
+        header {
+            padding-top: 20em;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            border-radius: 5%;
+        }
+
+        section {
+            padding-bottom: 3em;
+            padding-top: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .title {
+            border: 2px solid red;
+
+            #padding: 1em;
+            position: fixed;
+            top: 0;
+            left: 0px;
+            width: 99%;
+            background-color: #403D58; /* Dark Purple Color */
+            color: white;
+            text-align: center;
+            font-family: 'Abril Fatface', cursive;
+            font-size: 2em;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-self: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terhi Viitanen</title>
+</head>
+<body>
+<div class="title">
+    <h1>Terhi Viitanen</h1>
+    <div class="navbar">
+        <div><a href="#about">&nbsp;About Terhi</a></div>
+        <div><a href="#blogs">Blogs & Talks</a></div>
+        <div><a href="#contact">Contact&nbsp;</a></div>
+    </div>
+</div>
+<header>
+    <section id="intro">
+        <div class="intro">
+            <img src="Pictures/Terhi-profilepic.jpeg" alt="My Picture">
+            <div class="text">
+                <p>The digi-curious and AI-loving executive assistant who wants to break down the silos and make us work
+                    better together</p>
+                <p>Work life goal: to create a working culture where knowledge is shared, people feel empowered and
+                    continuous learning is encouraged</p>
+                <p>25 years of working experience from different industries such as technology, energy, law and
+                    property</p>
+            </div>
+        </div>
+    </section>
+</header>
+<section id="about">
+    <h2>About Terhi</h2>
+    <h3>Work History</h3>
+    <ul>
+        <li>
+            <h3>Executive Assistant and CX Champion Community Manager</h3>
+            <p>Vaisala Corporation - 01/2023 (current) </p>
+            <p>Supporting the Industrial Measurements Leadership Team and driving CX culture within Vaisala. Organising
+                offsite meetings and participation in in various projects such as CX Programme and Brand renewal.</p>
+        </li>
+        <li>
+            <h3>Executive Assistant</h3>
+            <p>Wärtsilä Corporation - 06/2012-01/2023 </p>
+            <p>Various global positions inc. in Marine Legal, Digital Transformation, HR and Communications & Marketing
+                teams, supporting the leaders in change communications and culture development projects</p>
+        </li>
+    </ul>
+</section>
+<section id="blogs">
+    <h2>Blogs & Talks </h2>
+    <p>I am intrigued to see where the current "Gen AI revolution" is taking my profession. </p>
+    <p>You can read my blogs (in Finnish) about the future of assistant work in Finland; see links below. Translations
+        are coming!</p>
+    <p> My favourite topic is to talk about how knowledge workers can start utilising Generative AI in their daily work,
+        using low-threshold examples and practical usecases.</p>
+    <p>Recently, I have given talks to Toimistosissit assistant network and discussed the same in a Haaga-Helia
+        University webinar. </p>
+    <div class="columns">
+        <div>
+            <h3>Blogs</h3>
+            <ul>
+                <li><a href="https://assistentinarkea.blogspot.com/2023/08/tekoaly-tuli-assistentti-oletko-valmis.html">Tekoäly
+                    tuli - Assistentti, oletko valmis?</a></li>
+                <li><a href="https://assistentinarkea.blogspot.com/2019/01/assistentin-arkea-virtuaali-vs.html">Assistentin
+                    rooli digi-aikana</a></li>
+            </ul>
+            <h3>Talks</h3>
+            <ul>
+                <li>Utilising Gen AI in my daily work; webinar by Haaga-Helia, 6 October 2023</li>
+                <li>"Tekoälynväläyksiä" talk to Toimistosissit network, 6 September 2023</li>
+            </ul>
+        </div>
+        <img src="Pictures/Blog-background.jpeg" alt="cityscape">
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect!
+    <p>Email: tviitanen@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/terhiviitanen">Terhi Viitanen</a></p>
+    <img src="Pictures/Digital-pigeon.jpg" alt="messenger_pigeon">
+</section>
+</body>
 </html>
